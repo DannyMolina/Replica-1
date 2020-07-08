@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&display=swap');
+
 .nav-linea {
     display: -webkit-box;
     display: flex;
@@ -8,3 +10,142 @@
     margin-left: 2.5rem;
     border-left: 2px solid #00d33f;
 }
+
+  
+  
+  
+  /* .container{
+    float: left;
+    text-align: center;
+    width: 95%;
+    margin: 3% 6%;
+    font-size: 18px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ; 
+  }
+   */
+
+
+  #calendar {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; 
+  }
+  
+  #calendar .month {
+    margin-bottom: 5px;
+    flex: 0 1 25%;
+   
+  }
+  
+  
+  .month{
+    font-size: 20px;
+    background-color: #a3a3a3;
+    color: rgb(255, 255, 255)
+
+  }
+  
+  #calendar .month ul {
+    display: flex;
+    padding: 9px 0;
+    font-family: 'Federant', cursive;
+  }
+  
+  #calendar ul li.festivos{
+    font-size: 14px;
+    text-align: center;
+    margin: 1;
+    border-radius: 35px 0px;
+    font-style: italic;
+    background-color: #000000;
+    padding: 1;
+    color: #00d33f;
+  
+  }
+  
+  #calendar .month ul li {
+    list-style-type: none;
+    flex: 1 1 0; 
+  }
+  
+  #calendar .month::before{
+    font-family: hamilton;
+    background-color: #000000;
+    color: #00d33f;
+    content: "ENERO";
+    display: block;
+    border: #00d33f solid 1px;
+    text-align: center;
+     
+  }
+  
+  #calendar .month ul:first-child {
+    margin-bottom: 30px;
+    border-bottom: 4px solid #00d33f; 
+  }
+  
+  #calendar .month:nth-child(2)::before {
+    content: "FEBRERO";
+    text-align: center; 
+  }
+  
+  #calendar .month:nth-child(3)::before {
+    content: "MARZO; 
+    text-align: center;
+  }
+  #calendar .month:nth-child(4)::before {
+    content: "ABRIL"; 
+    text-align: center;
+  }
+  #calendar .month:nth-child(5)::before {
+    content: "MAYO"; 
+    text-align: center;
+  }
+  #calendar .month:nth-child(6)::before {
+    content: "JUNIO"; 
+    text-align: center;
+  }
+  #calendar .month:nth-child(7)::before {
+    content: "JULIO"; 
+    text-align: center;
+  }
+  #calendar .month:nth-child(8)::before {
+    text-align: center;
+    content: "AGOSTO"; 
+  }
+  #calendar .month:nth-child(9)::before {
+    content: "SEPTIEMBRE";
+    text-align: center; 
+  }
+  #calendar .month:nth-child(10)::before {
+    content: "OCTUBRE";
+    text-align: center; 
+  }
+  #calendar .month:nth-child(11)::before {
+    content: "NOVIEMBRE";
+    text-align: center; 
+  }
+  #calendar .month:nth-child(12)::before {
+    content: "DICIEMBRE";
+    text-align: center; 
+  }
+  
+ 
+  
+  
+  @media screen and (max-width: 1920px) {
+    #calendar {
+      font-size: 25px; }
+      #calendar .month h2 {
+        flex-basis: 30%; } }
+  @media screen and (max-width: 1280px) {
+    #calendar {
+      font-size: 22px; }
+      #calendar .month h2 {
+        flex-basis: 47%; } }
+  @media screen and (max-width: 768px) {
+    #calendar {
+      font-size: 20px; }
+      #calendar .month h2 {
+        flex-basis: 100%; } }
+  
